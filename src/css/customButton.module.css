@@ -1,0 +1,19 @@
+:root{
+    --dark-blue: #002B5B;
+    --white-color: #fff;
+    --white-smoke: #f4f4f4;
+    --dark: #2C3333;
+    --blue: #4E31AA;
+    --orange: #B8621B;
+}
+.custom_button{
+    background-color: #B8621B;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    width: 90px;
+    outline: none;
+    cursor: pointer;
+}
