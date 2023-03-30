@@ -1,0 +1,34 @@
+{
+    "dev":[
+        {
+            "username": "ENG-CJ",
+            "name": "Abdulrahman Haaji",
+            "position": "Software Developer",
+            "country": "Somalia",
+            "University": "JUST University",
+            "image": "../../images/me.jpeg",
+            "description": "I am EMG-CJ and I am Software Developer From Somalia ",
+            "programming_languages":["PHP V.8","C# .NET","Flutter AFA","ReactJ V.8"]
+        },
+        {
+            "username": "ENG-NASRA",
+            "name": "Nasra Mohamed Farah",
+            "position": "Web Designer",
+            "country": "Somalia",
+            "University": "JUST University",
+            "image": "../../images/me.jpeg",
+            "description": "Waxaan Aahay Developer Qabiir Ku Ah Maadoyyinka Programming-ka",
+            "programming_languages":["HTML 5","CSS 3","AdobeXD","Angular"]
+        },
+        {
+            "username": "ENG-NASRA",
+            "name": "Nasra Mohamed Farah",
+            "position": "Web Designer",
+            "country": "Somalia",
+            "University": "JUST University",
+            "image": "../../images/me.jpeg",
+            "description": "Waxaan Aahay Developer Qabiir Ku Ah Maadoyyinka Programming-ka",
+            "programming_languages":["HTML 5","CSS 3","AdobeXD","Angular"]
+        }
+    ]
+}
