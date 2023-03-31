@@ -22,7 +22,7 @@ const Index=()=>{
         method: "POST",
         data: values,
         dataType: "JSON",
-        url : "http://localhost/react/api.react.php",
+        url : "https://mygallery2023.000webhostapp.com/react/api.react.php",
         success: (response)=>{
            alert(response.response);
         },
