@@ -24,7 +24,7 @@ const Index=()=>{
         dataType: "JSON",
         url : "http://localhost/react/api.react.php",
         success: (response)=>{
-            console.log(response);
+           alert(response.response);
         },
         error: (response)=>{
             console.log(response);
