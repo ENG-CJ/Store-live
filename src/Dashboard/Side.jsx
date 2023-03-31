@@ -2,6 +2,7 @@ import styles from "./main.module.css";
 import { Avatar, Divider } from "@mui/material";
 import { CodeOutlined, Dashboard, DeveloperBoard } from "@mui/icons-material";
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
+import { Link } from "react-router-dom";
 const Side=()=>{
     return(
         <div className={styles.sideBar}>
@@ -18,12 +19,12 @@ const Side=()=>{
                 <div className={styles.menuItems}>
                     <div className={styles.item}>
                     <Dashboard fontSize="13" className={styles.icons}/>
-                        <span>Dashboard</span>
+                        {/* <span><Link to={"/"}>Dashboard</Link></span> */}
                     </div>
                     <div className={styles.item}>
                   {/* <CodeOutlined/> */}
                     <SettingsSuggestIcon className={styles.icons} fontSize="15"/>
-                        <span>Settings</span>
+                    {/* <span><Link to={"/settings/:id/:name"}>Settings</Link></span> */}
                     </div>
                 </div>
             </div>

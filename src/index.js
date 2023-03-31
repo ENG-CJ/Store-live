@@ -1,31 +1,35 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Sidebar from "./components/Sidebar";
-import reportWebVitals from "./reportWebVitals";
-import Profile from './components/Profile'
-// import Test from './Test';
-// import Footer from './components/Footer'
-import { Route,BrowserRouter,Routes,Router} from "react-router-dom";
-import Test from "./components/Test";
-import Login from "./auth/components/Login";
-import { Buttons,ProgressBar,CheckBoxes,Texts,FABACTIONS,Selections } from "./Materials/CrashMaterialIcon";
-import Header from "./Dashboard/Header";
+
+import Header from "./Ruler/Header";
 import Footer from "./Dashboard/Footer";
-import Side from "./Dashboard/Side";
-import Main from "./Dashboard/Main";
-import styles from  "./Dashboard/main.module.css";
+import Side from "./Ruler/Side";
+import Main from "./Ruler/Main";
+import styles from './Ruler/main.module.css'
 import dev from './Dashboard/dev.json'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Settings from "./Dashboard/settings";
+import Index from "./PHP";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 <>
-<div className={styles.app}>
+
+
+<Index/>
+
+{/* <div className={styles.app}>
   <Header/>
 <div className={styles.content}>
   <Side/>
-  <Main data={dev}/>
+ <BrowserRouter>
+  <Routes>
+    <Route path="/" element={ <Main data={dev}/>}></Route>
+    <Route path="/settings/:id/:name" element={<Settings/>}></Route>
+  </Routes>
+ </BrowserRouter>
 </div>
 <Footer/>
-</div>
+</div> */}
 
 
 </>
@@ -51,7 +55,4 @@ root.render(
   // </BrowserRouter>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+

@@ -15,13 +15,14 @@ import {
 } from "@mui/material";
 import { Container } from "@mui/system";
 import { useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import styles from "./main.module.css";
 const Main = (props) => {
     props.data.dev.forEach((value) =>{
         (value.programming_languages.map((v)=>console.log(v)))
     })
-    var [count, setCount]=useState(0);
+    
   return (
     <Container>
       <div className={styles.content_banner}>
@@ -45,10 +46,8 @@ position="top-center"
                   avatar={<Avatar src={value.image} />}
                   action={
                   <Tooltip title="Follow This Developer">
-                      <Fab onClick={()=>toast.success("You Followd..."+value.username,{
-                        severity: "success"
-                      })}>
-                      <Add  />
+                      <Fab>
+                      <Link to={"/settings/"+value.username+'/'+value.name}><Add  /></Link>
                     </Fab>
                   </Tooltip>
                   }
